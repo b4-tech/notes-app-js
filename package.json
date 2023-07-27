@@ -1,0 +1,28 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint:js": "eslint src/js",
+    "lint:styles": "stylelint src/styles/**/*.scss",
+    "lint": "npm run lint:js && npm run lint:styles",
+    "start": "npm run lint && parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "b4-tech",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.6.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "stylelint": "^8.0.0",
+    "stylelint-config-airbnb": "^0.0.0"
+  }
+}
