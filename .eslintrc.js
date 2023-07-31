@@ -9,4 +9,9 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: 'module',
   },
+  rules: {
+    'max-len': ['error', { code: 180 }],
+    'no-alert': 'off',
+    'import/no-cycle': 'off',
+  },
 };

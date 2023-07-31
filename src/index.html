@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Notes App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Notes App</title>
 </head>
+
 <body>
-	<h1>Hello World</h1>
+    <div class="container" id="board">
+        <div class="notes-header">
+            <div></div>
+            <div>Name</div>
+            <div>Created</div>
+            <div>Category</div>
+            <div>Content</div>
+            <div>Dates</div>
+            <button class="notes-header__archive-btn"><i class="material-icons">archive</i></button>
+            <button class="notes-header__delete-btn"><i class="material-icons">delete</i></button>
+        </div>
+        <div class="items-list">
+        </div>
+        <div class="form-container">
+        </div>
+
+        <button class="create-note-btn">Create Note</button>
+        <div class="categories-header">
+            <div></div>
+            <div>Note Category</div>
+            <div class="categories-header__active">Active</div>
+            <div class="categories-header__archived">Archived</div>
+        </div>
+        <div class="categories-list">
+
+        </div>
+
+    </div>
+    <script type="module" src="./main.js"></script>
 </body>
+
 </html>

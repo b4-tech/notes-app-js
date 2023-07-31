@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint:js": "eslint src/js",
-    "lint:styles": "stylelint src/styles/**/*.scss",
+    "lint:styles": "stylelint src/styles/**/*.css",
     "lint": "npm run lint:js && npm run lint:styles",
     "start": "npm run lint && parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -15,7 +15,6 @@
   "author": "b4-tech",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.6.2",
     "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
